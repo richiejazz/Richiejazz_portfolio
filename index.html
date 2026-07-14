@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Richiejazz blends full-stack engineering with live jazz performances for modern brands and unforgettable events." />
+  <title>Richiejazz | Full-Stack Engineer & Jazz Musician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Richiejazz" />
+  <meta property="og:title" content="Richiejazz | Full-Stack Engineer & Jazz Musician" />
+  <meta property="og:description" content="Richiejazz blends full-stack engineering with live jazz performances for modern brands and unforgettable events." />
+  <meta property="og:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+  <meta property="og:url" content="https://richiejazz.com/" />
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Richiejazz | Full-Stack Engineer & Jazz Musician" />
+  <meta name="twitter:description" content="Richiejazz blends full-stack engineering with live jazz performances for modern brands and unforgettable events." />
+  <meta name="twitter:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">Richie<span>jazz</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="programming.html">Engineering</a></li>
+      <li><a href="contact.html" class="nav-cta">Connect</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="music.html" onclick="closeMenu()">Music</a>
+    <a href="programming.html" onclick="closeMenu()">Engineering</a>
+    <a href="contact.html" onclick="closeMenu()">Connect</a>
+  </div>
+
+  <div class="page-top">
+    <section id="home">
+      <div class="hero-copy reveal">
+        <span class="hero-badge">Full-Stack Engineering • Live Jazz • Creative Direction</span>
+        <h1>Richiejazz</h1>
+        <p class="hero-subtitle">I build polished digital experiences and bring unforgettable live music to meaningful moments.</p>
+        <p>I blend product-minded engineering with warm, expressive performance to create work that feels refined, modern, and memorable.</p>
+        <div class="hero-actions">
+          <a href="programming.html" class="btn-primary">View Engineering</a>
+          <a href="https://instagram.com/iam_richiejazz" class="btn-outline" target="_blank" rel="noopener">Follow Music</a>
+        </div>
+        <ul class="hero-highlights">
+          <li>Scalable full-stack builds with thoughtful architecture</li>
+          <li>Elegant live jazz for weddings, proposals, and corporate events</li>
+          <li>Remote collaboration and a calm, detail-first process</li>
+        </ul>
+      </div>
+      <div class="hero-media reveal">
+        <div class="hero-image-card">
+          <img src="images/richiejazz.jpg" alt="Richiejazz performing and creating" />
+          <div class="image-badge">Available for projects & performances</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-preview">
+      <p class="section-label">Explore</p>
+      <h2 class="home-preview-title">A refined blend of code, performance, and presence</h2>
+      <p class="home-preview-sub">Move through the work that matters most to you.</p>
+      <div class="preview-cards">
+        <a href="about.html" class="preview-card reveal">
+          <div class="preview-card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19h14"/><path d="M8 19V8.5a1.5 1.5 0 0 1 3 0V15"/><path d="M13 19V5.5a1.5 1.5 0 0 1 3 0V15"/></svg>
+          </div>
+          <div class="preview-card-title">About Me</div>
+          <p class="preview-card-desc">The story behind the brand, the craft, and the creative process.</p>
+          <span class="preview-arrow">Read more →</span>
+        </a>
+        <a href="https://instagram.com/iam_richiejazz" class="preview-card reveal" target="_blank" rel="noopener">
+          <div class="preview-card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V4"/><circle cx="9" cy="18" r="2"/><path d="M17 20V6"/><circle cx="17" cy="20" r="2"/><path d="M9 4h8"/></svg>
+          </div>
+          <div class="preview-card-title">Music & Events</div>
+          <p class="preview-card-desc">Weddings, proposals, jazz shows, and cultural performances with atmosphere.</p>
+          <span class="preview-arrow">See music →</span>
+        </a>
+        <a href="programming.html" class="preview-card reveal">
+          <div class="preview-card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/></svg>
+          </div>
+          <div class="preview-card-title">Engineering</div>
+          <p class="preview-card-desc">Full-stack work, APIs, product builds, and modern web experiences.</p>
+          <span class="preview-arrow">Explore engineering →</span>
+        </a>
+
+        <a href="contact.html" class="preview-card reveal">
+          <div class="preview-card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          </div>
+          <div class="preview-card-title">Get In Touch</div>
+          <p class="preview-card-desc">Book a performance or start a meaningful engineering collaboration.</p>
+          <span class="preview-arrow">Contact me →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Richie<span>jazz</span></span>
+    <span>&copy; 2026 Richiejazz. All rights reserved.</span>
+    <span>Built with code &amp; jazz 🎷</span>
+  </footer>
+
+  <a href="https://wa.me/2348164222539?text=Hello, Richiejazz i need your services." class="wa-float" target="_blank" rel="noopener">
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.7a.5.5 0 00.612.612l5.845-1.471A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.8-.53-5.38-1.45l-.385-.23-3.99 1.005 1.005-3.938-.244-.4A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

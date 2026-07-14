@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Richiejazz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Richiejazz" />
+  <meta property="og:title" content="About | Richiejazz" />
+  <meta property="og:description" content="The story behind Richiejazz — a Lagos-based full-stack engineer and live jazz musician." />
+  <meta property="og:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+  <meta property="og:url" content="https://richiejazz.com/about.html" />
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About | Richiejazz" />
+  <meta name="twitter:description" content="The story behind Richiejazz — a Lagos-based full-stack engineer and live jazz musician." />
+  <meta name="twitter:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Richie<span>jazz</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="programming.html">Engineering</a></li>
+    <li><a href="contact.html" class="nav-cta">Connect</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="music.html" onclick="closeMenu()">Music</a>
+  <a href="programming.html" onclick="closeMenu()">Engineering</a>
+  <a href="contact.html" onclick="closeMenu()">Connect</a>
+</div>
+<div class="page-top">
+  <section class="about-section">
+    <div class="section-header reveal">
+      <span class="section-label">Who I Am</span>
+      <h1 class="section-title">The Man Behind<br/>the Code &amp; the Music</h1>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-box">
+          <img src="images/richiejazz.jpg" alt="Richiejazz" />
+        </div>
+        <div class="about-accent"></div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">5<span>+</span></div><div class="stat-label">Years Engineering</div></div>
+          <div class="stat-card"><div class="stat-num">10<span>+</span></div><div class="stat-label">Years Playing Jazz</div></div>
+          <div class="stat-card"><div class="stat-num">50<span>+</span></div><div class="stat-label">Live Performances</div></div>
+          <div class="stat-card"><div class="stat-num">20<span>+</span></div><div class="stat-label">Projects Delivered</div></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p>I go by <strong>Richiejazz</strong> &mdash; a name that captures exactly who I am: a technologist with a musician&rsquo;s heart and a creative who thinks in systems. Based in Lagos, Nigeria, I exist at the intersection of two worlds that most people keep separate.</p>
+        <p>By day, I architect full-stack solutions &mdash; writing clean, scalable code that solves real problems for businesses and individuals. By evening, I let loose on the keys or the saxophone, performing jazz and soulful renditions that have moved audiences at events across the country.</p>
+        <p>What unites both disciplines is the same thing: deep listening, discipline, precision, and a relentless desire to create something that resonates. Whether I&rsquo;m debugging an API or improvising a jazz standard, the goal is always the same &mdash; make it feel effortless.</p>
+        <p>I believe the skills of a musician and an engineer are more alike than they seem. Both require mastery of fundamentals, comfort with complexity, and the courage to improvise when the moment demands it.</p>
+        <p>When I&rsquo;m not at my desk or on a stage, you&rsquo;ll find me studying new frameworks, transcribing jazz solos, or somewhere in Lagos looking for the next great performance opportunity.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+          <a href="https://instagram.com/iam_richiejazz" class="btn-primary" target="_blank" rel="noopener">Explore My Music</a>
+          <a href="programming.html" class="btn-outline">View Engineering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <span class="footer-logo">Richie<span>jazz</span></span>
+  <span>&copy; 2026 Richiejazz. All rights reserved.</span>
+  <span>Built with code &amp; jazz 🎷</span>
+</footer>
+<a href="https://wa.me/2348164222539?text=Hello, Richiejazz i need your services." class="wa-float" target="_blank" rel="noopener">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.7a.5.5 0 00.612.612l5.845-1.471A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.8-.53-5.38-1.45l-.385-.23-3.99 1.005 1.005-3.938-.244-.4A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

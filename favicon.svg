@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Richiejazz">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4e5aa"/>
+      <stop offset="0.5" stop-color="#dfbb55"/>
+      <stop offset="1" stop-color="#c8a84b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f0f10"/>
+  <text x="50%" y="50%" dy="0.35em" text-anchor="middle"
+        font-family="Georgia, 'Playfair Display', serif" font-weight="700"
+        font-size="34" fill="url(#g)">Rj</text>
+</svg>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Richiejazz music services for weddings, proposals, concerts, and corporate events, linked directly to Instagram." />
+  <title>Music | Richiejazz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Richiejazz" />
+  <meta property="og:title" content="Music | Richiejazz" />
+  <meta property="og:description" content="Elegant live jazz for weddings, proposals, concerts, and corporate events by Richiejazz." />
+  <meta property="og:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+  <meta property="og:url" content="https://richiejazz.com/music.html" />
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Music | Richiejazz" />
+  <meta name="twitter:description" content="Elegant live jazz for weddings, proposals, concerts, and corporate events by Richiejazz." />
+  <meta name="twitter:image" content="https://richiejazz.com/images/richiejazz.jpg" />
+
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">Richie<span>jazz</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
+      <li><a href="programming.html">Engineering</a></li>
+      <li><a href="contact.html" class="nav-cta">Connect</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="music.html" onclick="closeMenu()">Music</a>
+    <a href="programming.html" onclick="closeMenu()">Engineering</a>
+    <a href="contact.html" onclick="closeMenu()">Connect</a>
+  </div>
+
+  <div class="page-top">
+    <section class="music-section">
+      <div class="section-header reveal">
+        <span class="section-label">Musical Services</span>
+        <h1 class="section-title">Elegant live music for moments that deserve to be remembered.</h1>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="services-grid reveal">
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 20V8"/><path d="M8 8c0-2 1.8-4 4-4s4 2 4 4"/><path d="M12 4v16"/></svg></div><div class="service-title">Wedding Performances</div><p class="service-desc">Refined live jazz and soul-led arrangements for ceremonies, receptions, and intimate celebrations.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 10h8"/><path d="M8 14h5"/></svg></div><div class="service-title">Birthday Surprises</div><p class="service-desc">Private performances crafted to make milestones feel personal, warm, and unforgettable.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16"/><path d="M8 8c2 1 4 1 8 0"/><path d="M8 13c2 1 4 1 8 0"/></svg></div><div class="service-title">Proposal Surprises</div><p class="service-desc">A beautifully paced live set designed to heighten the emotion of one unforgettable moment.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17V8"/><path d="M6 8h8"/><path d="M16 17V7"/><path d="M16 7h2"/></svg></div><div class="service-title">Jazz Shows &amp; Concerts</div><p class="service-desc">Atmospheric performances that balance improvisation, elegance, and powerful stage presence.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18V9"/><path d="M12 18V5"/><path d="M18 18v-6"/></svg></div><div class="service-title">Musical Renditions</div><p class="service-desc">A modern blend of jazz standards, original compositions, and soulful covers with personality.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h4"/></svg></div><div class="service-title">Corporate Events</div><p class="service-desc">Elevated live music for launches, dinners, networking evenings, and high-end brand moments.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17c3-2 7-2 10 0"/><path d="M8 13c2-1 4-1 6 0"/><circle cx="12" cy="7" r="2"/></svg></div><div class="service-title">Thanksgiving &amp; Ceremonies</div><p class="service-desc">Meaningful performances for milestone gatherings and community celebrations.</p></a>
+        <a href="https://instagram.com/iam_richiejazz" class="service-card" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17l6-8 6 8"/><path d="M10 17h4"/><path d="M12 9v8"/></svg></div><div class="service-title">Graduation Celebrations</div><p class="service-desc">A polished soundtrack for academic achievements and joyous family gatherings.</p></a>
+      </div>
+
+      <div class="music-quote reveal">
+        <p>“Music is the shorthand of emotion — and I bring that emotion to life in every performance.”</p>
+        <cite>— Richiejazz</cite>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="https://instagram.com/iam_richiejazz" class="btn-primary" target="_blank" rel="noopener">View Instagram</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Richie<span>jazz</span></span>
+    <span>&copy; 2026 Richiejazz. All rights reserved.</span>
+    <span>Built with code &amp; jazz 🎷</span>
+  </footer>
+
+  <a href="https://wa.me/2348164222539?text=Hello, Richiejazz i need your services." class="wa-float" target="_blank" rel="noopener">
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.7a.5.5 0 00.612.612l5.845-1.471A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.8-.53-5.38-1.45l-.385-.23-3.99 1.005 1.005-3.938-.244-.4A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
