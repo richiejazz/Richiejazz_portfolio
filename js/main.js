@@ -24,16 +24,58 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-// ── Skill bar fill animation
-const barObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.width = e.target.dataset.width;
-      barObs.unobserve(e.target);
+// ── Skill bar fill + percentage count-up
+// Each .skill-row's bar fills to its data-width while its .skill-pct counts up
+// from 0 with the same ease-out curve and duration as the CSS transition.
+const SKILL_DURATION = 1100;
+const SKILL_STAGGER = 90;
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+function animateSkillRow(row, index) {
+  const fill = row.querySelector('.skill-fill');
+  const pct = row.querySelector('.skill-pct');
+  const target = parseInt(fill.dataset.width, 10) || 0;
+
+  if (reduceMotion.matches) {
+    fill.style.width = target + '%';
+    if (pct) pct.textContent = target + '%';
+    return;
+  }
+
+  const delay = index * SKILL_STAGGER;
+  fill.style.transitionDelay = delay + 'ms';
+  fill.style.width = target + '%';
+  if (!pct) return;
+
+  const start = performance.now() + delay;
+  const tick = (now) => {
+    const t = Math.min(Math.max((now - start) / SKILL_DURATION, 0), 1);
+    pct.textContent = Math.round(target * easeOutCubic(t)) + '%';
+    if (t < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+document.querySelectorAll('.skills-wrap').forEach(card => {
+  const rows = [...card.querySelectorAll('.skill-row')];
+  if (!rows.length) return;
+  const run = () => rows.forEach(animateSkillRow);
+
+  // The HTML holds the final values (shown if JS never runs); start from 0%.
+  if (!reduceMotion.matches) {
+    rows.forEach(row => { const pct = row.querySelector('.skill-pct'); if (pct) pct.textContent = '0%'; });
+  }
+
+  if (!('IntersectionObserver' in window)) { run(); return; }
+  const skillObs = new IntersectionObserver((entries) => {
+    if (entries.some(e => e.isIntersecting)) {
+      run();
+      skillObs.disconnect();
     }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.skill-fill').forEach(b => barObs.observe(b));
+  }, { threshold: 0.35 });
+  skillObs.observe(card);
+});
 
 // ── Contact form submit with EmailJS
 const contactForm = document.getElementById('contact-form');

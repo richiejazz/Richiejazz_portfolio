@@ -1,0 +1,14 @@
+# Netlify build settings for richiejazz.com (a static site published from the repo root).
+#
+# The editable résumé sources and PDF build script in resume-src/ are for local use only
+# (node resume-src/build-pdfs.mjs). This build step deletes that folder from Netlify's build
+# copy of the repo before publishing, so it is never uploaded or served. It does not touch
+# your local files. The finished PDFs in downloads/ are published as normal.
+#
+# _redirects also returns 404 for /resume-src/ as a second layer, e.g. for drag-and-drop
+# deploys, which skip this build step. Netlify serves paths case-insensitively, so removing
+# the folder at build time is the reliable protection.
+#
+# Only the build command is set here; the publish directory stays as configured in Netlify.
+[build]
+  command = "rm -rf resume-src"

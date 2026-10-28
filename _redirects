@@ -1,0 +1,7 @@
+# Netlify redirect rules (read at deploy time from the publish directory, which is the repo root).
+#
+# The editable résumé sources and their PDF build script live in /resume-src/ so the PDFs can be
+# regenerated locally (node resume-src/build-pdfs.mjs). They are never served publicly: the "!"
+# forces a 404 even though the files exist in the deploy. The public PDFs are in /downloads/.
+/resume-src     /404   404!
+/resume-src/*   /404   404!

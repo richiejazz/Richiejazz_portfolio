@@ -1,0 +1,3 @@
+# Editable résumé sources and PDF build script: local only (personal details, internal notes).
+# The built PDFs in downloads/ are committed and published.
+resume-src/
